@@ -1,3 +1,9 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+app_homepage:
+    path: /
+    defaults:
+        _controller: AppBundle:Default:index
+
+app_fetch:
+    path: /fetch_podcast
+    defaults:
+        _controller: AppBundle:Default:fetch
